@@ -28,7 +28,7 @@ import './Board.css';
  *  This doesn't handle any clicks --- clicks are on individual cells
  *
  **/
-let size = Math.floor(Math.random() * 7) + 4;
+let size = Math.floor(Math.random() * 5) + 4;
 class Board extends Component {
 
   static defaultProps = {
