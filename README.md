@@ -12,9 +12,9 @@ Game board of Lights out.
   - board: array-of-arrays of true/false
  
 For this board:
-        .  .  .
-        O  O  .     (where . is off, and O is on)
-        .  .  .
+ -       .  .  .
+ -       O  O  .     (where . is off, and O is on)
+ -       .  .  .
 
 This would be: [[f, f, f], [t, t, f], [f, f, f]]
 
