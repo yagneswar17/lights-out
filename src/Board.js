@@ -28,7 +28,7 @@ import './Board.css';
  *  This doesn't handle any clicks --- clicks are on individual cells
  *
  **/
-let size = Math.floor(Math.random() * 7) + 1;
+let size = Math.floor(Math.random() * 7) + 4;
 class Board extends Component {
 
   static defaultProps = {
@@ -39,7 +39,7 @@ class Board extends Component {
   constructor(props) {
     super(props);
 
-    // TODO: set initial state
+    // set initial state
     this.state = {
       hasWon: false,
       board: this.createBoard()
@@ -50,7 +50,7 @@ class Board extends Component {
 
   createBoard() {
     let board = [];
-    // TODO: create array-of-arrays of true/false values
+    // create array-of-arrays of true/false values
     for (let i = 0; i < this.props.nrows; i++) {
       let row = [];
       for (let j = 0; j < this.props.ncols; j++) {
